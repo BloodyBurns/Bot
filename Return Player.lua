@@ -10,3 +10,5 @@ local ReturnTarget = function(Player)
     
     return nil
 end
+
+return ReturnTarget
