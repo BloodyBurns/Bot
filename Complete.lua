@@ -21,7 +21,7 @@ Run('Fling', true) -- // Fling Script
 Run('Target', game:GetService('Players').LocalPlayer.Name)
 Support('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/BloodyBurns/Bot/main/Complete.lua\'))()')
 spawn(function()
-    while wait(5) do
+    while wait(3.5) do
         Run('Chat', ToSay[math.random(1, #ToSay)])
     end
 end)
@@ -31,6 +31,6 @@ while true do
         _G.BotScripTarget = v
         workspace.CurrentCamera.CameraSubject = workspace.SpawnLocation
 
-        wait(1 / 50) -- // Delay
+        wait(1 / 40) -- // Delay
     end
 end
