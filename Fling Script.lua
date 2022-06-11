@@ -25,3 +25,5 @@ local Fling = function()
         end)
     end)
 end
+
+return Fling
