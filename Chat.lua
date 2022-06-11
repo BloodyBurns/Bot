@@ -4,3 +4,5 @@ local SayMessage = function(Message)
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(tostring(Message), "All")
     end
 end
+
+return SayMessage
