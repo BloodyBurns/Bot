@@ -11,3 +11,5 @@ local NewCam = function()
     CamView.CFrame = game:GetService('Players').LocalPlayer.Character:GetModelCFrame()
     return CamView
 end
+
+return NewCam
