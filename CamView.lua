@@ -9,7 +9,7 @@ local NewCam = function()
     CamView.Transparency = 1
     CamView.Name = 'BotScript_Camera'
     CamView.CFrame = game:GetService('Players').LocalPlayer.Character:GetModelCFrame()
-    return CamView
+    return workspace.BotScript_Camera
 end
 
 return NewCam
