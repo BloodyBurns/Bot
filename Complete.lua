@@ -5,7 +5,7 @@ local Support, CameraView, File = (syn and syn.queue_on_teleport) or queue_on_te
 local BotScripts = {
     ['Chat'] = 'Chat.lua',
     ['Fling'] = 'Fling Script.lua',
-    ['Target'] = 'Target.lua'
+    ['Target'] = 'Target.lua',
     ['Camera'] = 'CamView.lua'
 }
 
