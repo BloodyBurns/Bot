@@ -13,12 +13,12 @@ local Fling = function()
     game:GetService("RunService").Heartbeat:Connect(function()
         pcall(function()
             plr.Character:SetPrimaryPartCFrame(
-                (_G.FlingBotTarget.Character:FindFirstChild("HumanoidRootPart").CFrame or
-                    _G.FlingBotTarget.Character:FindFirstChildWhichIsA("BasePart").CFrame))
+                (_G.BotScripTarget.Character:FindFirstChild("HumanoidRootPart").CFrame or
+                    _G.BotScripTarget.Character:FindFirstChildWhichIsA("BasePart").CFrame))
                     
             plr.Character.HumanoidRootPart.CFrame =
-                (_G.FlingBotTarget.Character:FindFirstChild("HumanoidRootPart").CFrame or
-                _G.FlingBotTarget.Character:FindFirstChildWhichIsA("BasePart").CFrame)
+                (_G.BotScripTarget.Character:FindFirstChild("HumanoidRootPart").CFrame or
+                _G.BotScripTarget.Character:FindFirstChildWhichIsA("BasePart").CFrame)
 
             plr.Character.HumanoidRootPart.Velocity = Vector3.new(0, -10e10, 10e10)
             plr.Character.HumanoidRootPart.RotVelocity = Vector3.new(0, -10e10, 10e10)
