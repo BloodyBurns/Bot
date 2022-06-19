@@ -29,16 +29,15 @@ end)
 
 wait(1)
 spawn(function()
-    wait(30)
-    Run('Hop', true)
+    while true do
+        for _, v in next, game:GetService('Players'):GetPlayers() do
+            _G.BotScripTarget = v
+            workspace.CurrentCamera.CameraSubject = workspace.SpawnLocation
+    
+            wait(1 / 40) -- // Delay
+        end
+    end
 end)
 
-
-while true do
-    for _, v in next, game:GetService('Players'):GetPlayers() do
-        _G.BotScripTarget = v
-        workspace.CurrentCamera.CameraSubject = workspace.SpawnLocation
-
-        wait(1 / 40) -- // Delay
-    end
-end
+wait(30)
+Run('Hop', true)
