@@ -6,7 +6,7 @@ local BotScripts = {
     ['Chat'] = 'Chat.lua',
     ['Fling'] = 'Fling Script.lua',
     ['Target'] = 'Target.lua',
-    ['Camera'] = 'CamView.lua'
+    ['Camera'] = 'CamView.lua',
     ['Hop'] = 'Server Hop.lua'
 }
 
@@ -22,7 +22,7 @@ Run('Fling', true) -- // Fling Script
 Run('Target', game:GetService('Players').LocalPlayer.Name)
 Support('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/BloodyBurns/Bot/main/Complete.lua\'))()')
 spawn(function()
-    while wait(1) do
+    while wait(2) do
         Run('Chat', ToSay[math.random(1, #ToSay)])
     end
 end)
