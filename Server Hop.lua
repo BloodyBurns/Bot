@@ -6,7 +6,7 @@ local Hop = function()
 		table.insert(IDs, v.id)
 	end
 
-	game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, IDs[math.random(1, #IDs)])
+	repeat game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, IDs[math.random(1, #IDs)]) wait() until not game
 end
 
 return Hop
