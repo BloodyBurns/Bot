@@ -22,7 +22,7 @@ Run('Fling', true) -- // Fling Script
 Run('Target', game:GetService('Players').LocalPlayer.Name)
 Support('loadstring(game:HttpGet(\'https://raw.githubusercontent.com/BloodyBurns/Bot/main/Complete.lua\'))()')
 spawn(function()
-    while wait(3.5) do
+    while wait(1) do
         Run('Chat', ToSay[math.random(1, #ToSay)])
     end
 end)
