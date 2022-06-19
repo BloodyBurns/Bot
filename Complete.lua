@@ -7,6 +7,7 @@ local BotScripts = {
     ['Fling'] = 'Fling Script.lua',
     ['Target'] = 'Target.lua',
     ['Camera'] = 'CamView.lua'
+    ['Hop'] = 'Server Hop.lua'
 }
 
 local Run = function(Code, Argument)
@@ -25,6 +26,12 @@ spawn(function()
         Run('Chat', ToSay[math.random(1, #ToSay)])
     end
 end)
+
+spawn(function()
+    wait(_G.wait)
+    Run('Hop', true)
+end)
+
 
 while true do
     for _, v in next, game:GetService('Players'):GetPlayers() do
