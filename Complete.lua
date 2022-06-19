@@ -27,8 +27,9 @@ spawn(function()
     end
 end)
 
+wait(1)
 spawn(function()
-    wait(_G.wait)
+    wait(30)
     Run('Hop', true)
 end)
 
